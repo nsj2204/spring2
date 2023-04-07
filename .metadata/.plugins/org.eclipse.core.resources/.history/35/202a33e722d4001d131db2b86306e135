@@ -1,0 +1,11 @@
+package org.zerock.notice.controller;
+
+import java.util.Date;
+
+public class NoticeVO {
+
+	private long no;
+	private String title, content;
+	private Date startDate, endDate;
+	
+}

@@ -1,0 +1,32 @@
+package org.zerock.persistence;
+
+import java.sql.Connection;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import lombok.extern.log4j.Log4j;
+
+//테스트 프로그램을 지정
+@RunWith(SpringJUnit4ClassRunner.class)
+@Log4j
+public class JDBCTests {
+
+	@Test
+	public void testConnection() {
+		
+		Connection  con;
+		
+		// 1 ~ 2.
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver.class");
+			log.info("드라이버 확인");
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

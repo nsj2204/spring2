@@ -1,0 +1,13 @@
+package org.zerock.board.service;
+
+import org.springframework.stereotype.Service;
+
+import lombok.Setter;
+
+@Service
+public class BoardServiceImpl {
+
+	@Setter
+	private BoardMapper mapper;
+	
+}

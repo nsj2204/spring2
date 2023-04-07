@@ -1,0 +1,15 @@
+package org.zerock.controller;
+
+import org.springframework.stereotype.Controller;
+
+// uri - /sample/*
+@Controller
+public class SampleController {
+
+	// String - redirect: 에 안붙으면 jsp로 forward, redirect:이 붙어 있으면 페이지 이동
+	// void면 uri가 jsp의 정보가 된다. 예) /sample/test -> /sample/test.jsp를 자동 찾는다.
+	public void basic() {
+		
+	}
+	
+}

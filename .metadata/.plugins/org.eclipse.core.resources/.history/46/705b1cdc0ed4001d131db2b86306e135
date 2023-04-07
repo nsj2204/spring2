@@ -1,0 +1,13 @@
+package org.zerock.controller;
+
+import org.springframework.stereotype.Controller;
+
+// uri - /sample/*
+@Controller
+public class SampleController {
+
+	public basic() {
+		
+	}
+	
+}

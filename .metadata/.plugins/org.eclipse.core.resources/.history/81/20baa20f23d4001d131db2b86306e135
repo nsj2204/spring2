@@ -1,0 +1,17 @@
+package org.zerock.notice.controller;
+
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+public class NoticeVO {
+
+	private long no;
+	private String title, content;
+	// 받는 데이터는 String으로 들어와서 오류가 난다. 
+	private Date startDate, endDate;
+	private Date writeDate, updateDate;
+	
+	
+}

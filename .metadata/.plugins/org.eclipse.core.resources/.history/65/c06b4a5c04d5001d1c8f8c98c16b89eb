@@ -1,0 +1,25 @@
+package org.zerock.aop;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+import lombok.extern.log4j.Log4j;
+
+@Aspect
+@Log4j
+@Component
+public class LogAdvice {
+
+	public Object logTime(ProceedingJoinPoint pjp) {
+		long start = System.currentTimeMillis();
+		
+		// 실행하는 클래스
+		log.info("실행 객체 : " + pjp.getTarget());
+		
+		long end = System.currentTimeMillis();
+		
+		log.info("Time : " + (end - start));
+	}
+	
+}

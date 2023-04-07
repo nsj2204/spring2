@@ -1,0 +1,25 @@
+package org.zerock.exception;
+
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import lombok.extern.log4j.Log4j;
+
+//자동 생성 어노테이션 - @Controller - 컨트롤러, @Service - 서비스, @Repository - 저장소(DAO), 
+//@Component - 이외의 자동생성이 필요한 구성체, @RestController, @Advice - 예외처리 -> Servlet-context.xml에 선언(URL 관련)
+//그 외 어노테이션 - root-context.xml에 선언 (URL 미관련)
+@ControllerAdvice
+@Log4j
+public class CommonExceptionAdvice {
+
+	// 500 번 예외 전체 - Exception
+	@ExceptionHandler(Exception.class)
+	public String exception() {
+		
+		log.error("Exception ....");
+		
+		return "error/error_page";
+	}
+	
+}

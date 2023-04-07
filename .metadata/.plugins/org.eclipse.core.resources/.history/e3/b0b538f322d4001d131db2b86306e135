@@ -1,0 +1,16 @@
+package org.zerock.notice.controller;
+
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+public class NoticeVO {
+
+	private long no;
+	private String title, content;
+	private Date startDate, endDate;
+	private Date writeDate, updateDate;
+	
+	
+}
