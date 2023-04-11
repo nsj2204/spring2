@@ -7,11 +7,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>게시판 리스트</title>
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
  <style type="text/css">
  	.dataRow:hover{
  		background: #eee;
@@ -20,6 +20,11 @@
  </style>
  <script type="text/javascript">
 	$(function(){
+
+/* 		<c:if test="${msg != null}">
+			$("#messageModal").modal("show");
+		</c:if> */
+		
 		//alert("jQuery loading");
 		$(".dataRow").click(function(){
 				//alert("data Click")
@@ -31,8 +36,10 @@
  </script>
 </head>
 <body>
-<div class="container">
-	<h1>게시판 리스트</h1>
+	<div class="card-header py-3">
+		게시판 리스트
+	</div>
+	<div class="card-body">
 	<table class="table">
 		<thead>
 			<tr>
@@ -58,5 +65,6 @@
 	<a href="write.do" class="btn btn-default">글쓰기</a>
 	<div><pageNav:pageNav listURI="list.do" pageObject="${pageObject }" /></div>
 </div>
+
 </body>
 </html>

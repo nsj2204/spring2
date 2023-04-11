@@ -35,7 +35,7 @@
 				<label>비밀번호</label>
 				<input name="pw" class="form-control" type="password" id="pw">
 			</div>
-			<button class="btn btn-default">등록</button>
+			<button class="btn btn-default">등록테스트입니다.</button>
 	</form>
 </div>
 <div>${vo }</div>

@@ -2,3 +2,10 @@
 4월 05, 2023 17:31:07.230 NEW SESSION
 4월 05, 2023 17:31:07.230 [15452:9588:0405/173107.225:ERROR:device_event_log_impl.cc(222)] [17:31:07.225] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
 4월 05, 2023 17:31:07.656 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 10, 2023 08:24:43.318 NEW SESSION
+4월 10, 2023 08:24:43.318 [6552:14560:0410/082443.316:ERROR:device_event_log_impl.cc(222)] [08:24:43.316] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+4월 10, 2023 08:24:43.873 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 10, 2023 09:05:56.982 [6552:14560:0410/090556.982:ERROR:device_event_log_impl.cc(222)] [09:05:56.981] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: ��Ұ� �����ϴ�. (0x490)
+4월 10, 2023 09:42:58.340 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+4월 10, 2023 14:50:53.129 [6552:14560:0410/145053.128:ERROR:CONSOLE(1)] "Request Storage.getStorageKeyForFrame failed. {"code":-32602,"message":"Frame tree node for given frame not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)

@@ -28,6 +28,13 @@ public class BoardController {
 	@Qualifier("boardServiceImpl")
 	private BoardService service;
 	
+	@RequestMapping("/list2.do")
+	public String list2() {
+		log.info("게시판 리스트2........................");
+//		System.out.println(10/0);
+		return "board/list2";
+	}
+	
 	@RequestMapping("/list.do")
 	public String list(@ModelAttribute("pageObject") PageObject pageObject, Model model) {
 		log.info("게시판 리스트........................");
